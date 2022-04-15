@@ -1,0 +1,127 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+nav .brand-logo {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.input-field label {
+  color: white;
+}
+/* label focus color */
+.input-field input[type='text']:focus + label {
+  color: white;
+}
+
+.input-field input[type='text']:focus {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+input[type='text']:not(.browser-default) {
+  border-bottom: 1px solid white;
+  color: white;
+}
+input[type='text']:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid white;
+  -webkit-box-shadow: 0 1px 0 0 white;
+  box-shadow: 0 1px 0 0 white;
+}
+input[type='text']:not(.browser-default):focus:not([readonly]) + label {
+  color: white;
+}
+
+.contenedor-form {
+  padding: 3rem 0 1px 0;
+  background-color: #03a9f4;
+}
+.buscador i {
+  width: 100%;
+}
+.error {
+  color: white;
+  margin-top: 3rem;
+  text-align: center;
+}
+.resultado {
+  margin-top: 3rem;
+}
+.resultado h2 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.resultado p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.resultado .temperatura {
+  font-size: 1.8rem;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand-logo {
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  padding: 0.8rem 0;
+}
+.alert-message {
+  padding: 0.5rem 2rem;
+  text-align: center;
+  font-weight: 900;
+  color: goldenrod;
+  background-color: #d0342c;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  animation: blinking 5s infinite;
+  border-radius: 1rem;
+  border: 2px solid goldenrod;
+}
+.alert-message h2 {
+  font-size: 1.9rem;
+}
+@keyframes blinking {
+  0% {
+    color: goldenrod;
+    background-color: #d0342c;
+    border: 2px solid goldenrod;
+  }
+  25% {
+    color: #d0342c;
+    background-color: goldenrod;
+    border: 2px solid #d0342c;
+  }
+  50% {
+    color: goldenrod;
+    background-color: #d0342c;
+    border: 2px solid goldenrod;
+  }
+  75% {
+    color: #d0342c;
+    background-color: goldenrod;
+    border: 2px solid #d0342c;
+  }
+  100% {
+    color: goldenrod;
+    background-color: #d0342c;
+    border: 2px solid goldenrod;
+  }
+}
+.label {
+  font-size: 1.5rem !important;
+}
